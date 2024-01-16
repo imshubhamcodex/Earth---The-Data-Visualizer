@@ -4,7 +4,7 @@ async function gotMessage(message, sender, sendResponse) {
   if (message.text === "go") {
     console.log("Earth Activated");
     console.log(
-      "Made by shubhamcodex - https://github.com/imshubhamcodex/Pluto---Chain-data-Analytics"
+      "Made by shubhamcodex - https://github.com/imshubhamcodex/Earth---The-Data-Visualizer"
     );
 
     let current_url_arr = window.location.toString().split("/");
