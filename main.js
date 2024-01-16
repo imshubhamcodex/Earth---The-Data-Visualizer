@@ -711,3 +711,20 @@ function getShareHoldingYearly() {
 
   return [SHOL, table_head_text];
 }
+
+
+
+function saveScrollPosition() {
+  localStorage.setItem('scrollPosition', window.scrollY);
+}
+
+function restoreScrollPosition() {
+  const savedScrollPosition = localStorage.getItem('scrollPosition');
+
+  if (savedScrollPosition !== null) {
+    window.scrollTo(0, savedScrollPosition);
+  }
+}
+
+window.addEventListener('scroll', saveScrollPosition);
+window.addEventListener('load', restoreScrollPosition);
