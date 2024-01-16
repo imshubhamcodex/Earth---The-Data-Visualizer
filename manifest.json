@@ -1,0 +1,19 @@
+{
+    "name": "Earth - The Data Visualizer",
+    "version": "0.0.0",
+    "manifest_version": 2,
+    "content_scripts" : [
+		{	
+			"matches" : [
+				"https://www.screener.in/*"
+			],
+			"js" : ["main.js","chart.js"]
+		}
+	],
+    "background" : {
+		"scripts": ["background.js"]
+	},
+    "browser_action" : {
+		"default_icon" : "go.png"
+	}
+}
